@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Issue Status</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="main.js"></script>
+    <style>
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        th, td {
+            padding: 12px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #008CBA;
+            color: white;
+            font-size: 18px;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        tr:hover {
+            background-color: #ddd;
+            transition: 0.3s ease-in-out;
+        }
+        .content {
+            text-align: center;
+            padding: 20px;
+        }
+        h2 {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Check Drainage Issue Status</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="report.html">Report Issue</a>
+            <a href="status.html">Check Status</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <section class="content">
+        <h2>Submitted Issues</h2>
+        <table id="issuesTable">
+            <tr>
+                <th>Issue ID</th>
+                <th>Address</th>
+                <th>Description</th>
+                <th>Status</th>
+            </tr>
+        </table>
+    </section>
+</body>
+</html>
